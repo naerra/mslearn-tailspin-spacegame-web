@@ -9,11 +9,9 @@ trigger:
 pool:
   vmImage: 'ubuntu-16.04'
   demands:
-  -npn
+  -npm
 
 variables:
-  solution: '**/*.sln'
-  buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
 steps:
